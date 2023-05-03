@@ -3,7 +3,7 @@ import re
 def terminal():
     # opening the file and show its content
     print("Insert what you should insert below")
-    file_1=open("assest/small_file.txt")
+    file_1=open("assest/make_me_a_video_game_template.txt")
     txt=file_1.read()
 
     content_tuple=() 
@@ -33,6 +33,10 @@ def terminal():
 
     # print(txt)
     string = ' '.join(txt)
+    file = open('filename.txt', 'w')
+    file.write(string)
+    file.close()
+
     return string
 result=terminal()
 print(result)
